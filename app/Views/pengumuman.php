@@ -22,7 +22,7 @@
                     <thead>
                       <tr>
                         <th>Tanggal</th>
-                        <th>Pengumuman</th>
+                        <th width="70%">Pengumuman</th>
                         <th>Download</th>
                       </tr>
                     </thead>
