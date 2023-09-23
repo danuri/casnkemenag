@@ -36,7 +36,7 @@ class Home extends BaseController
 
     public function faq(): string
     {
-      $this->cachePage(6400);
+      // $this->cachePage(6400);
 
       $model = new CrudModel;
       $data['general'] = $model->getResult('faq',['category'=>1]);

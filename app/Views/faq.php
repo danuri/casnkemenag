@@ -12,7 +12,7 @@
               <div class="col-xxl-5 align-self-center">
                 <div class="py-4">
                   <h4 class="display-6 coming-soon-text">Frequently asked questions</h4>
-                  <p class="text-muted fs-15 mt-3">JIka Anda tidak menemukan jawaban, silahkan cari informasi melalui kolom komentar Instagram atau Channel <a href="https://t.me/casnkemenagcr">Telegram.</p>
+                  <p class="text-muted fs-15 mt-3">JIka Anda tidak menemukan jawaban, silahkan cari informasi melalui kolom komentar Instagram atau Channel <a href="https://t.me/casnkemenagcr">Telegram</a>.</p>
                 </div>
               </div>
               <div class="col-xxl-3 ms-auto">
