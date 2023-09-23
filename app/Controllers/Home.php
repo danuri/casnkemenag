@@ -36,6 +36,11 @@ class Home extends BaseController
 
     public function faq(): string
     {
-      return view('faq');
+      $this->cachePage(86400);
+      
+      $model = new CrudModel;
+      $data['general'] = $model->getResult('faq',['category'=>1]);
+      $data['syarat'] = $model->getResult('faq',['category'=>2]);
+      return view('faq', $data);
     }
 }
