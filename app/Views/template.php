@@ -261,6 +261,13 @@
 
     <!-- App js -->
     <script src="<?= base_url()?>/assets/js/app.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.datatable').DataTable();
+      });
+
+    </script>
 </body>
 
 </html>

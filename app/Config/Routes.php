@@ -10,3 +10,4 @@ $routes->get('pengumuman', 'Home::pengumuman');
 $routes->get('formasi/cpns', 'Home::cpns');
 $routes->get('formasi/cpppkteknis', 'Home::cpppkteknis');
 $routes->get('formasi/cpppknakes', 'Home::cpppknakes');
+$routes->get('faq', 'Home::faq');

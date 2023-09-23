@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Controllers;
+use App\Models\CrudModel;
 
 class Home extends BaseController
 {
@@ -16,7 +17,11 @@ class Home extends BaseController
 
     public function cpns(): string
     {
-      return view('formasi');
+      $this->cachePage(86400);
+
+      $model = new CrudModel;
+      $data['formasi'] = $model->getResult('temp_formasi_cpns');
+      return view('formasi/cpns', $data);
     }
 
     public function cpppkteknis(): string
@@ -27,5 +32,10 @@ class Home extends BaseController
     public function cpppknakes(): string
     {
       return view('formasi');
+    }
+
+    public function faq(): string
+    {
+      return view('faq');
     }
 }
