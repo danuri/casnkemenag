@@ -69,15 +69,15 @@
             </div>
           </div>
 
-          <div class="accordion accordion-border-box" id="manageaccount-accordion">
+          <div class="accordion accordion-border-box" id="syarat-accordion">
             <?php foreach ($syarat as $row) {?>
               <div class="accordion-item">
-                <h2 class="accordion-header" id="genques-heading<?= $row->id?>2">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#genques-collapse<?= $row->id?>2" aria-expanded="false" aria-controls="genques-collapse<?= $row->id?>2" fdprocessedid="attyp">
+                <h2 class="accordion-header" id="syarat-heading<?= $row->id?>">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#syarat-collapse<?= $row->id?>" aria-expanded="false" aria-controls="syarat-collapse<?= $row->id?>" fdprocessedid="attyp">
                     <?= $row->question?>
                   </button>
                 </h2>
-                <div id="genques-collapse<?= $row->id?>2" class="accordion-collapse collapse" aria-labelledby="genques-heading<?= $row->id?>2" data-bs-parent="#genques-accordion" style="">
+                <div id="syarat-collapse<?= $row->id?>" class="accordion-collapse collapse" aria-labelledby="syarat-heading<?= $row->id?>" data-bs-parent="#syarat-accordion" style="">
                   <div class="accordion-body">
                     <?= $row->answer?>
                   </div>
