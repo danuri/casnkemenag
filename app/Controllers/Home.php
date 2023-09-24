@@ -26,17 +26,25 @@ class Home extends BaseController
 
     public function cpppkteknis(): string
     {
-      return view('formasi');
+      $this->cachePage(86400);
+
+      $model = new CrudModel;
+      $data['formasi'] = $model->getResult('temp_formasi_teknis');
+      return view('formasi/teknis', $data);
     }
 
     public function cpppknakes(): string
     {
-      return view('formasi');
+      $this->cachePage(86400);
+
+      $model = new CrudModel;
+      $data['formasi'] = $model->getResult('temp_formasi_nakes');
+      return view('formasi/nakes', $data);
     }
 
     public function faq(): string
     {
-      // $this->cachePage(6400);
+      $this->cachePage(86400);
 
       $model = new CrudModel;
       $data['general'] = $model->getResult('faq',['category'=>1]);

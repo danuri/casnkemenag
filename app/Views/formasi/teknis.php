@@ -7,7 +7,7 @@
     <div class="row">
       <div class="col-12">
         <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-          <h4 class="mb-sm-0">Formasi CPNS</h4>
+          <h4 class="mb-sm-0">Formasi CPPPK Tenaga Teknis</h4>
         </div>
       </div>
     </div>
@@ -15,7 +15,12 @@
     <div class="row">
       <div class="alert alert-warning alert-dismissible fade show" role="alert">
           <strong>Info!</strong><br>
-          Jabatan yang tersedia pada jenis pengadaan CPNS Kementerian Agama hanya <b>Asisten Ahli - Dosen</b> dan <b>Lektor - Dosen</b>
+          Jenis Jabatan tersedia yang termasuk ke PPPK Teknis sebagai berikut:
+          <ul>
+            <li>PPPK Dosen</li>
+            <li>PPPK Guru</li>
+            <li>PPPK JF Lainnya (Arsiparis/Pranata Komputer/Dll)</li>
+          </ul>
       </div>
       <div class="card">
         <div class="card-body">
@@ -26,6 +31,7 @@
                   <th>LOKASI</th>
                   <th>JABATAN</th>
                   <th>PENDIDIKAN</th>
+                  <th>JENIS FORMASI</th>
                   <th>ALOKASI</th>
                 </tr>
               </thead>
@@ -35,6 +41,7 @@
                     <td><?= $row->lokasi_formasi?></td>
                     <td><?= $row->jabatan?></td>
                     <td><?= $row->nama_pendidikan?></td>
+                    <td><?= $row->jenis_formasi?></td>
                     <td><?= $row->jumlah?></td>
                   </tr>
                 <?php } ?>
