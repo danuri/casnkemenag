@@ -17,7 +17,7 @@ class Home extends BaseController
 
     public function cpns(): string
     {
-      $this->cachePage(86400);
+      // $this->cachePage(86400);
 
       $model = new CrudModel;
       $data['formasi'] = $model->getResult('temp_formasi',['pengadaan'=>'CPNS']);
@@ -26,7 +26,7 @@ class Home extends BaseController
 
     public function cpppkteknis(): string
     {
-      $this->cachePage(86400);
+      // $this->cachePage(86400);
 
       $model = new CrudModel;
       $data['formasi'] = $model->getResult('temp_formasi',['pengadaan'=>'TEKNIS']);
@@ -35,7 +35,7 @@ class Home extends BaseController
 
     public function cpppknakes(): string
     {
-      $this->cachePage(86400);
+      // $this->cachePage(86400);
 
       $model = new CrudModel;
       $data['formasi'] = $model->getResult('temp_formasi',['pengadaan'=>'NAKES']);
@@ -56,6 +56,22 @@ class Home extends BaseController
     {
       $model = new CrudModel;
       $data['jabatan'] = $model->getjabatan();
+
+      $data['pengadaan'] = '';
+      $data['jenis'] = '';
+      $data['sjabatan'] = '';
+      $data['syaratumum'] = (object) array();
+      $data['syaratkhusus'] = (object) array();
+
+      if($this->request->getVar('pengadaan')){
+        $data['syaratumum'] = $model->getPersyaratanUmum('UMUM',$this->request->getVar('pengadaan'),$this->request->getVar('jenis'));
+        $data['syaratkhusus'] = $model->getPersyaratanKhusus($this->request->getVar('pengadaan'),$this->request->getVar('jenis'),$this->request->getVar('jabatan'));
+
+        $data['pengadaan'] = $this->request->getVar('pengadaan');
+        $data['jenis'] = $this->request->getVar('jenis');
+        $data['sjabatan'] = $this->request->getVar('jabatan');
+      }
+
       return view('persyaratan', $data);
     }
 }

@@ -38,7 +38,27 @@ class CrudModel extends Model
 
       public function getjabatan()
       {
-        $query = $this->db->query("SELECT jabatan_id, jabatan FROM temp_formasi_teknis GROUP BY jabatan_id, jabatan")->getResult();
+        $query = $this->db->query("SELECT jabatan_id, jabatan FROM temp_formasi GROUP BY jabatan_id, jabatan")->getResult();
+        return $query;
+      }
+
+      public function getPersyaratanUmum($syarat,$pengadaan,$jenis)
+      {
+        if($jenis == 8){
+          $query = $this->db->query("SELECT * FROM temp_persyaratan WHERE jenis='$pengadaan' AND (jenis_formasi_id='8' OR jenis_formasi_id='1') AND jenis_persyaratan='$syarat'")->getResult();
+        }else{
+          $query = $this->db->query("SELECT * FROM temp_persyaratan WHERE jenis='$pengadaan' AND jenis_formasi_id='$jenis' AND jenis_persyaratan='$syarat'")->getResult();
+        }
+        return $query;
+      }
+
+      public function getPersyaratanKhusus($pengadaan,$jenis,$jabatan)
+      {
+        if($jenis == 8){
+          $query = $this->db->query("SELECT * FROM temp_persyaratan WHERE jenis='$pengadaan' AND (jenis_formasi_id='8' OR jenis_formasi_id='1') AND jabatan_id='$jabatan' AND jenis_persyaratan='KHUSUS'")->getResult();
+        }else{
+          $query = $this->db->query("SELECT * FROM temp_persyaratan WHERE jenis='$pengadaan' AND jenis_formasi_id='$jenis' AND jabatan_id='$jabatan' AND jenis_persyaratan='KHUSUS'")->getResult();
+        }
         return $query;
       }
 }

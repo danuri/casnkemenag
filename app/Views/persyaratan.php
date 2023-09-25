@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                    <h4 class="mb-sm-0">PENGUMUMAN</h4>
+                    <h4 class="mb-sm-0">DOKUMEN PERSYARATAN</h4>
                 </div>
             </div>
         </div>
@@ -25,9 +25,9 @@
                       <div class="col-lg-9">
                           <select class="form-select" name="pengadaan">
                             <option value="">Pilih</option>
-                            <option value="CPNS">CPNS</option>
-                            <option value="TEKNIS">PPPK TEKNIS</option>
-                            <option value="NAKES">PPPK TENAGA KESEHATAN</option>
+                            <option value="CPNS" <?= ($pengadaan == 'CPNS')?'selected':'';?>>CPNS</option>
+                            <option value="TEKNIS" <?= ($pengadaan == 'TEKNIS')?'selected':'';?>>PPPK TEKNIS</option>
+                            <option value="NAKES" <?= ($pengadaan == 'NAKES')?'selected':'';?>>PPPK TENAGA KESEHATAN</option>
                           </select>
                       </div>
                   </div>
@@ -36,10 +36,10 @@
                           <label for="websiteUrl" class="form-label">Jenis Formasi</label>
                       </div>
                       <div class="col-lg-9">
-                        <select class="form-select" name="pengadaan">
+                        <select class="form-select" name="jenis">
                           <option value="">Pilih</option>
-                          <option value="UMUM">UMUM</option>
-                          <option value="KHUSUS">KHUSUS</option>
+                          <option value="1" <?= ($jenis == '1')?'selected':'';?>>UMUM</option>
+                          <option value="8" <?= ($jenis == '8')?'selected':'';?>>KHUSUS</option>
                         </select>
                       </div>
                   </div>
@@ -48,11 +48,11 @@
                           <label for="websiteUrl" class="form-label">Jabatan</label>
                       </div>
                       <div class="col-lg-9">
-                        <select class="form-select" name="pengadaan">
+                        <select class="form-select" name="jabatan">
                           <option value="">Pilih</option>
                           <?php foreach ($jabatan as $row) {
-                            // code...
-                            echo '<option value="'.$row->jabatan_id.'">'.$row->jabatan.'</option>';
+                            $select = ($row->jabatan_id == $sjabatan)?'selected':'';
+                            echo '<option value="'.$row->jabatan_id.'" '.$select.'>'.$row->jabatan.'</option>';
                           } ?>
                         </select>
                       </div>
@@ -65,27 +65,59 @@
             </div>
 
             <div class="card">
+              <div class="card-header">
+                <h5>Syarat Umum</h5>
+              </div>
               <div class="card-body">
                 <div class="table-responsive">
                   <table class="table align-middle table-striped-columns mb-0">
                     <thead>
                       <tr>
-                        <th>Tanggal</th>
-                        <th width="70%">Pengumuman</th>
-                        <th>Download</th>
+                        <th>No.</th>
+                        <th>Persyaratan</th>
+                        <th>Wajib?</th>
                       </tr>
                     </thead>
                     <tbody>
+                      <?php
+                      $no = 1;
+                      foreach ($syaratumum as $row) {?>
+                        <tr>
+                          <td><?= $no;?></td>
+                          <td><?= $row->syarat;?></td>
+                          <td><?= $row->is_mandatory;?></td>
+                        </tr>
+                      <?php $no++; } ?>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <h5>Syarat Khusus</h5>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table align-middle table-striped-columns mb-0">
+                    <thead>
                       <tr>
-                        <td>22-09-2023</td>
-                        <td>Pelaksanaan Seleksi Calon Pegawai Pemerintah dengan Perjanjian Kerja (CPPPK) Kementerian Agama Republik Indonesia Tahun Anggaran 2023</td>
-                        <td><a href="https://kemenag.go.id/informasi/pengumuman-pendaftaran-seleksi-calon-pppk-kemenag-tahun-2023" target="_blank">Download</a></td>
+                        <th>No.</th>
+                        <th>Persyaratan</th>
+                        <th>Wajib?</th>
                       </tr>
-                      <tr>
-                        <td>22-09-2023</td>
-                        <td>Pelaksanaan Seleksi Calon Pegawai Negeri Sipil (CPNS) Kementerian Agama Republik Indonesia Tahun Anggaran 2023</td>
-                        <td><a href="https://kemenag.go.id/informasi/pengumuman-pendaftaran-seleksi-calon-cpns-kemenag-tahun-2023" target="_blank">Download</a></td>
-                      </tr>
+                    </thead>
+                    <tbody>
+                      <?php
+                      $no = 1;
+                      foreach ($syaratkhusus as $row) {?>
+                        <tr>
+                          <td><?= $no;?></td>
+                          <td><?= $row->syarat;?></td>
+                          <td><?= $row->is_mandatory;?></td>
+                        </tr>
+                      <?php $no++; } ?>
                     </tbody>
                   </table>
                 </div>
