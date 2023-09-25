@@ -20,7 +20,7 @@ class Home extends BaseController
       $this->cachePage(86400);
 
       $model = new CrudModel;
-      $data['formasi'] = $model->getResult('temp_formasi_cpns');
+      $data['formasi'] = $model->getResult('temp_formasi',['pengadaan'=>'CPNS']);
       return view('formasi/cpns', $data);
     }
 
@@ -29,7 +29,7 @@ class Home extends BaseController
       $this->cachePage(86400);
 
       $model = new CrudModel;
-      $data['formasi'] = $model->getResult('temp_formasi_teknis');
+      $data['formasi'] = $model->getResult('temp_formasi',['pengadaan'=>'TEKNIS']);
       return view('formasi/teknis', $data);
     }
 
@@ -38,7 +38,7 @@ class Home extends BaseController
       $this->cachePage(86400);
 
       $model = new CrudModel;
-      $data['formasi'] = $model->getResult('temp_formasi_nakes');
+      $data['formasi'] = $model->getResult('temp_formasi',['pengadaan'=>'NAKES']);
       return view('formasi/nakes', $data);
     }
 
@@ -50,5 +50,12 @@ class Home extends BaseController
       $data['general'] = $model->getResult('faq',['category'=>1]);
       $data['syarat'] = $model->getResult('faq',['category'=>2]);
       return view('faq', $data);
+    }
+
+    public function persyaratan(): string
+    {
+      $model = new CrudModel;
+      $data['jabatan'] = $model->getjabatan();
+      return view('persyaratan', $data);
     }
 }

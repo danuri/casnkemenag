@@ -185,6 +185,12 @@
                             </div>
                         </li>
 
+                        <!-- <li class="nav-item">
+                            <a class="nav-link menu-link" href="<?= site_url('persyaratan')?>">
+                                <i class="ri-todo-line"></i> <span data-key="t-faq">Cek Persyaratan</span>
+                            </a>
+                        </li> -->
+
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="<?= site_url('faq')?>">
                                 <i class="ri-todo-line"></i> <span data-key="t-faq">FAQ</span>

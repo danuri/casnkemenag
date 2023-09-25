@@ -36,12 +36,9 @@ class CrudModel extends Model
         return $query->getResult();
       }
 
-      public function dokumen()
+      public function getjabatan()
       {
-        $kode = session('idsatker');
-        $query = $this->db->query("SELECT a.*,
-                                  (SELECT lampiran FROM tr_dokumen WHERE id_dokumen=a.id AND id_satker='$kode') lampiran
-                                  FROM tm_dokumen a")->getResult();
+        $query = $this->db->query("SELECT jabatan_id, jabatan FROM temp_formasi_teknis GROUP BY jabatan_id, jabatan")->getResult();
         return $query;
       }
 }
