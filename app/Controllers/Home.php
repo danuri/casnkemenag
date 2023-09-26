@@ -49,6 +49,7 @@ class Home extends BaseController
       $model = new CrudModel;
       $data['general'] = $model->getResult('faq',['category'=>1]);
       $data['syarat'] = $model->getResult('faq',['category'=>2]);
+      $data['pendidikan'] = $model->getResult('faq',['category'=>3]);
       return view('faq', $data);
     }
 
