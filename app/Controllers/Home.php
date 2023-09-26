@@ -17,7 +17,7 @@ class Home extends BaseController
 
     public function cpns(): string
     {
-      // $this->cachePage(86400);
+      $this->cachePage(86400);
 
       $model = new CrudModel;
       $data['formasi'] = $model->getResult('temp_formasi',['pengadaan'=>'CPNS']);
@@ -26,7 +26,7 @@ class Home extends BaseController
 
     public function cpppkteknis(): string
     {
-      // $this->cachePage(86400);
+      $this->cachePage(86400);
 
       $model = new CrudModel;
       $data['formasi'] = $model->getResult('temp_formasi',['pengadaan'=>'TEKNIS']);
@@ -35,7 +35,7 @@ class Home extends BaseController
 
     public function cpppknakes(): string
     {
-      // $this->cachePage(86400);
+      $this->cachePage(86400);
 
       $model = new CrudModel;
       $data['formasi'] = $model->getResult('temp_formasi',['pengadaan'=>'NAKES']);
