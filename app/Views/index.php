@@ -24,17 +24,20 @@
                 <thead class="table-light">
                   <tr>
                     <th>Jenis Pengadaan</th>
-                    <th>Jadwal</th>
+                    <th>Mulai</th>
+                    <th>Akhir</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>CPNS</td>
                     <td>22 September 2023, 23:59 WIB</td>
+                    <td>09 Oktober 2023, 23:59 WIB</td>
                   </tr>
                   <tr>
                     <td>CPPPK</td>
                     <td>23 September 2023, 23:59 WIB</td>
+                    <td>09 Oktober 2023, 23:59 WIB</td>
                   </tr>
                 </tbody>
               </table>
