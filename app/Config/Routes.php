@@ -12,3 +12,4 @@ $routes->get('formasi/cpppkteknis', 'Home::cpppkteknis');
 $routes->get('formasi/cpppknakes', 'Home::cpppknakes');
 $routes->get('faq', 'Home::faq');
 $routes->get('persyaratan', 'Home::persyaratan');
+$routes->get('pg', 'Home::pg');

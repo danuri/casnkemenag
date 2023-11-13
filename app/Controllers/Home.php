@@ -53,6 +53,12 @@ class Home extends BaseController
       return view('faq', $data);
     }
 
+    public function pg(): string
+    {
+      $this->cachePage(86400);
+      return view('pg');
+    }
+
     public function persyaratan(): string
     {
       $model = new CrudModel;
