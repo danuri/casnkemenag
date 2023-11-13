@@ -55,7 +55,7 @@ class Home extends BaseController
 
     public function pg(): string
     {
-      $this->cachePage(86400);
+      // $this->cachePage(86400);
       return view('pg');
     }
 
