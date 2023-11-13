@@ -37,6 +37,21 @@
                         <td>Pelaksanaan Seleksi Calon Pegawai Negeri Sipil (CPNS) Kementerian Agama Republik Indonesia Tahun Anggaran 2023</td>
                         <td><a href="https://kemenag.go.id/informasi/pengumuman-pendaftaran-seleksi-calon-cpns-kemenag-tahun-2023" target="_blank">Download</a></td>
                       </tr>
+                      <tr>
+                        <td>08-11-2023</td>
+                        <td>Pelaksanaan Seleksi Kompetensi Dasar (SKD) Calon Pegawai Negeri Sipil Kementerian Agama</td>
+                        <td><a href="https://cdn.kemenag.go.id/storage/archives/pengumuman-pelaksanaan-skd-cpns-kemenag-tahun-2023-2pdf.pdf" target="_blank">Download</a></td>
+                      </tr>
+                      <tr>
+                        <td>08-11-2023</td>
+                        <td>Pelaksanaan Seleksi Kompetensi Calon PPPK Kementerian Agama Tahun 2023</td>
+                        <td><a href="https://cdn.kemenag.go.id/storage/archives/pengumuman-pelaksanaan-seleksi-kompetensi-cpppk-kemenag-tahun-2023pdf.pdf" target="_blank">Download</a></td>
+                      </tr>
+                      <tr>
+                        <td>10-11-2023</td>
+                        <td>Penyesuaian Jadwal dan Seleksi Kompetensi Calon PPPK Kemenag 2023</td>
+                        <td><a href="https://cdn.kemenag.go.id/storage/archives/pengumuman-penyesuaian-jadwal-dan-lokasi-sk-cpppk-kemenag-tahun-2023pdf.pdf" target="_blank">Download</a></td>
+                      </tr>
                     </tbody>
                   </table>
                 </div>

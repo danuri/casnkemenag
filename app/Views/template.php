@@ -185,11 +185,11 @@
                             </div>
                         </li>
 
-                        <!-- <li class="nav-item">
-                            <a class="nav-link menu-link" href="<?= site_url('persyaratan')?>">
-                                <i class="ri-todo-line"></i> <span data-key="t-faq">Cek Persyaratan</span>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="<?= site_url('pg')?>">
+                                <i class="ri-todo-line"></i> <span data-key="t-faq">Passing Grade</span>
                             </a>
-                        </li> -->
+                        </li>
 
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="<?= site_url('faq')?>">
