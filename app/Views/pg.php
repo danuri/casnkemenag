@@ -144,6 +144,7 @@
                         <th>Materi</th>
                         <th>Jumlah Soal</th>
                         <th>Nilai Maksimal</th>
+                        <th>Porsi</th>
                         <th>PG</th>
                       </tr>
                     </thead>
@@ -152,12 +153,21 @@
                         <td>Seleksi Kompetensi Teknis</td>
                         <td>90</td>
                         <td>450</td>
-                        <td><span class="text-danger">Lihat tabel dibawah</span></td>
+                        <td>50%</td>
+                        <td rowspan="2"><span class="text-danger">Lihat tabel dibawah</span></td>
+                      </tr>
+                      <tr>
+                        <td>Seleksi Kompetensi Teknis Tambahan (Moderasi Beragama)</td>
+                        <td>Belum tersedia</td>
+                        <td>Belum tersedia</td>
+                        <td>50%</td>
+                        <td></td>
                       </tr>
                       <tr>
                         <td>Seleksi Kompetensi Manajerial</td>
                         <td>25</td>
                         <td rowspan="2">180*</td>
+                        <td rowspan="2">-</td>
                         <td rowspan="2">117*</td>
                       </tr>
                       <tr>
@@ -168,6 +178,7 @@
                         <td>Wawancara</td>
                         <td>10</td>
                         <td>40</td>
+                        <td>-</td>
                         <td>24</td>
                       </tr>
                     </tbody>
