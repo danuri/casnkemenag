@@ -17,7 +17,8 @@
           <div class="col-xl-12">
             <div class="card">
               <div class="card-header">
-                <b>CPNS</b>
+                <span class="float-end"><a href="https://drive.google.com/file/d/1x_8Sea14q6i5kZWI6u2sLI6OFaLdeYjg/view" target="_blank">Kepmen No. 651 Tahun 2023</a></span>
+                <h6 class="card-title mb-0">CPNS</h6>
               </div>
               <div class="card-body">
                 <div class="table-responsive">
@@ -57,7 +58,8 @@
 
             <div class="card">
               <div class="card-header">
-                <b>PPPK DOSEN</b>
+                <span class="float-end"><a href="https://drive.google.com/file/d/1hkGASVvHwvw8jBugbc1h-ZDFI5U4KLyH/view" target="_blank">Kepmen No. 653 Tahun 2023</a></span>
+                <h6 class="card-title mb-0">PPPK DOSEN</h6>
               </div>
               <div class="card-body">
                 <div class="table-responsive">
@@ -134,7 +136,8 @@
 
             <div class="card">
               <div class="card-header">
-                <b>PPPK FUNGSIONAL</b>
+                <span class="float-end"><a href="https://drive.google.com/file/d/1_gOsIz3-4kxfORavPSoHO8z5XNWleSfq/view" target="_blank">Kepmen No. 652 Tahun 2023</a></span>
+                <h6 class="card-title mb-0">PPPK FUNGSIONAL</h6>
               </div>
               <div class="card-body">
                 <div class="table-responsive">
