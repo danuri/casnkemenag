@@ -7,12 +7,14 @@ class Home extends BaseController
 {
     public function index(): string
     {
-        return view('index');
+        $data['title'] = 'Home';
+        return view('index', $data);
     }
 
     public function pengumuman(): string
     {
-      return view('pengumuman');
+      $data['title'] = 'Pengumuman';
+      return view('pengumuman', $data);
     }
 
     public function cpns(): string
@@ -21,6 +23,7 @@ class Home extends BaseController
 
       $model = new CrudModel;
       $data['formasi'] = $model->getResult('temp_formasi',['pengadaan'=>'CPNS']);
+      $data['title'] = 'Formasi CPNS';
       return view('formasi/cpns', $data);
     }
 
@@ -30,6 +33,7 @@ class Home extends BaseController
 
       $model = new CrudModel;
       $data['formasi'] = $model->getResult('temp_formasi',['pengadaan'=>'TEKNIS']);
+      $data['title'] = 'Formasi PPPK Teknis';
       return view('formasi/teknis', $data);
     }
 
@@ -39,6 +43,7 @@ class Home extends BaseController
 
       $model = new CrudModel;
       $data['formasi'] = $model->getResult('temp_formasi',['pengadaan'=>'NAKES']);
+      $data['title'] = 'Formasi PPPK Nakes';
       return view('formasi/nakes', $data);
     }
 
@@ -50,13 +55,15 @@ class Home extends BaseController
       $data['general'] = $model->getResult('faq',['category'=>1]);
       $data['syarat'] = $model->getResult('faq',['category'=>2]);
       $data['pendidikan'] = $model->getResult('faq',['category'=>3]);
+      $data['title'] = 'FAQ';
       return view('faq', $data);
     }
 
     public function pg(): string
     {
       // $this->cachePage(86400);
-      return view('pg');
+      $data['title'] = 'Passing Grade';
+      return view('pg', $data);
     }
 
     public function persyaratan(): string
@@ -79,6 +86,7 @@ class Home extends BaseController
         $data['sjabatan'] = $this->request->getVar('jabatan');
       }
 
+      $data['title'] = 'Persyaratan';
       return view('persyaratan', $data);
     }
 }
