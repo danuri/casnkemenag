@@ -13,3 +13,4 @@ $routes->get('formasi/cpppknakes', 'Home::cpppknakes');
 $routes->get('faq', 'Home::faq');
 $routes->get('persyaratan', 'Home::persyaratan');
 $routes->get('pg', 'Home::pg');
+$routes->get('informasi', 'Informasi::index');
