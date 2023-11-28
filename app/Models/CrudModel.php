@@ -61,4 +61,11 @@ class CrudModel extends Model
         }
         return $query;
       }
+
+      public function getProv()
+      {
+        $query = $this->db->query("SELECT id_provinsi,provinsi FROM skt_lokasi GROUP BY id_provinsi,provinsi")->getResult();
+
+        return $query;
+      }
 }

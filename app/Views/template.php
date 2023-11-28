@@ -202,6 +202,12 @@
                                 <i class="ri-todo-line"></i> <span data-key="t-regulasi">Regulasi</span>
                             </a>
                         </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link text-danger" href="<?= site_url('lokasi')?>">
+                                <i class="ri-todo-line"></i> <span data-key="t-regulasi">Pemilihan Lokasi SKTT</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <!-- Sidebar -->
@@ -275,10 +281,29 @@
     <script src="<?= base_url()?>/assets/js/app.js"></script>
 
     <script type="text/javascript">
-      $(document).ready(function() {
-        $('.datatable').DataTable();
-      });
+      function alert($text) {
+          Toastify({
+          text: $text,
+          duration: 5000,
+          newWindow: true,
+          close: true,
+          gravity: "top", // `top` or `bottom`
+          position: "center", // `left`, `center` or `right`
+          stopOnFocus: true, // Prevents dismissing of toast on hover
+          style: {
+              background: "linear-gradient(to right, #00b09b, #96c93d)",
+          },
+          onClick: function(){} // Callback after click
+          }).showToast();
+      }
 
+      <?php
+      if(session()->getFlashdata('message')){
+          ?>
+          alert("<?= session()->getFlashdata('message')?>");
+          <?php
+      }
+      ?>
     </script>
 
     <?= $this->renderSection('script') ?>

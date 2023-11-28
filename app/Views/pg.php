@@ -429,3 +429,10 @@
     <!-- container-fluid -->
 </div>
 <?= $this->endSection() ?>
+<?= $this->section('script') ?>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.datatable').DataTable();
+  });
+</script>
+<?= $this->endSection() ?>
