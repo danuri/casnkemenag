@@ -18,7 +18,7 @@
         <li>Semua Peserta yang Memenuhi Syarat Seleksi Administrasi memilih lokasi ujian SKTT</li>
         <li>Peserta yang berhak mengikuti SKTT akan diinformasikan pada pengumuman selanjutnya (Sesuai Ketentuan yang berlaku)</li>
         <li>Pilih lokasi ujian yang terdekat dengan domisili</li>
-        <li>Lokasi Gedung dapat berubah pada setiap kabupaten. Menyesuaikan dengan kapasitas peserta.</li>
+        <li>Lokasi Gedung dapat berubah pada setiap kabupaten (Kankemenag/Madrasah/PTKN/UPT/Balai). Menyesuaikan dengan kapasitas peserta.</li>
         <li>Jadwal dan Lokasi Gedung akan diinformasikan pada pengumuman selanjutnya</li>
       </ul>
     </div>
