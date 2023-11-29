@@ -93,4 +93,13 @@ class Lokasi extends BaseController
 
       return redirect()->back()->with('message', 'Data telah disimpan.');
     }
+
+    public function test()
+    {
+      $cache = \Config\Services::cache();
+      $cacheKey = 'query_getprov';
+      $provinsi = $cache->get($cacheKey);
+
+      print_r($provinsi);
+    }
 }
