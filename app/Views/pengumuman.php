@@ -52,6 +52,16 @@
                         <td>Penyesuaian Jadwal dan Seleksi Kompetensi Calon PPPK Kemenag 2023</td>
                         <td><a href="https://cdn.kemenag.go.id/storage/archives/pengumuman-penyesuaian-jadwal-dan-lokasi-sk-cpppk-kemenag-tahun-2023pdf.pdf" target="_blank">Download</a></td>
                       </tr>
+                      <tr>
+                        <td>22-11-2023</td>
+                        <td>Pengumuman Hasil Seleksi Kompetensi Dasar (SKD) CPNS Kementerian Agama Tahun 2023</td>
+                        <td><a href="https://cdn.kemenag.go.id/storage/archives/pengumuman-hasil-skd-cpns-kemenag-tahun-2023-signedpdf.pdf" target="_blank">Download</a></td>
+                      </tr>
+                      <tr>
+                        <td>28-11-2023</td>
+                        <td>Pengumuman Pemilihan Titik Lokasi Ujian Seleksi Kompetensi Teknis Tambahan (SKTT) Calon PPPK Kemenag 2023</td>
+                        <td><a href="https://cdn.kemenag.go.id/storage/archives/pengumuman-pemilihan-titik-lokasi-skttpdf.pdf" target="_blank">Download</a></td>
+                      </tr>
                     </tbody>
                   </table>
                 </div>
