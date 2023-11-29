@@ -42,7 +42,7 @@ class Lokasi extends BaseController
           $crud = new CrudModel;
           $provinsi = $crud->getProv();
 
-          $cache->save($cacheKey, $provinsi, 3600);
+          $cache->save($cacheKey, $provinsi, 360000);
         }
 
         $crud = new CrudModel;
@@ -63,7 +63,7 @@ class Lokasi extends BaseController
         $crud = new CrudModel;
         $kabupaten = $crud->getResult('skt_lokasi',['id_provinsi'=>$provinsi]);
 
-        $cache->save($cacheKey, $kabupaten, 3600);
+        $cache->save($cacheKey, $kabupaten, 360000);
       }
 
       echo '<option value="">-Pilih Lokasi-</option>';
