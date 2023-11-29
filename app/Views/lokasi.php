@@ -12,7 +12,14 @@
         </div>
       </div>
     </div>
-
+    <div class="alert alert-success">
+      <ul>
+        <li>Pemilihan Lokasi Ujian SKTT sampai dengan 3 Desember 2023</li>
+        <li>Semua Peserta yang Memenuhi Syarat Seleksi Administrasi memilih lokasi ujian SKTT</li>
+        <li>Peserta yang berhak mengikuti SKTT akan diinformasikan pada pengumuman selanjutnya (Sesuai Ketentuan yang berlaku)</li>
+        <li>Pilih lokasi ujian yang terdekat dengan domisili</li>
+      </ul>
+    </div>
     <div class="row">
       <div class="col-md-4">
         <div class="card">
