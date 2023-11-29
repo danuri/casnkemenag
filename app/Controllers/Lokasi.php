@@ -34,8 +34,19 @@ class Lokasi extends BaseController
         $data['auth'] = true;
         $data['peserta'] = $cek;
 
+        $cache = \Config\Services::cache();
+        $cacheKey = 'query_getprov';
+        $provinsi = $cache->get($cacheKey);
+
+        if ($provinsi === null) {
+          $crud = new CrudModel;
+          $provinsi = $crud->getProv();
+
+          $cache->save($cacheKey, $provinsi, 3600);
+        }
+
         $crud = new CrudModel;
-        $data['provinsi'] = $crud->getProv();
+        $data['provinsi'] = $provinsi;
         return view('lokasi', $data);
       }else{
         return redirect()->back()->with('message', 'Kombinasi NIK dan Nomor Peserta tidak ditemukan.');
@@ -44,8 +55,16 @@ class Lokasi extends BaseController
 
     public function getkab($provinsi)
     {
-      $crud = new CrudModel;
-      $kabupaten = $crud->getResult('skt_lokasi',['id_provinsi'=>$provinsi]);
+      $cache = \Config\Services::cache();
+      $cacheKey = 'query_getkab_'.$provinsi;
+      $kabupaten = $cache->get($cacheKey);
+
+      if ($kabupaten === null) {
+        $crud = new CrudModel;
+        $kabupaten = $crud->getResult('skt_lokasi',['id_provinsi'=>$provinsi]);
+
+        $cache->save($cacheKey, $kabupaten, 3600);
+      }
 
       echo '<option value="">-Pilih Lokasi-</option>';
       foreach ($kabupaten as $row) {
