@@ -27,8 +27,10 @@ class Lokasi extends BaseController
         return redirect()->back()->with('message', 'Isi semua form.');
       }
 
+      $cache = \Config\Services::cache();
+      $cek = $cache->get('auth_'.$this->request->getVar('nik'));
       $model = new LokasiModel;
-      $cek = $model->where(['nik'=>$this->request->getVar('nik'),'nomor_peserta'=>$this->request->getVar('nopes'),'nomor_ijazah'=>$this->request->getVar('ijazah')])->first();
+      // $cek = $model->where(['nik'=>$this->request->getVar('nik'),'nomor_peserta'=>$this->request->getVar('nopes'),'nomor_ijazah'=>$this->request->getVar('ijazah')])->first();
 
       if($cek){
         $data['title'] = 'Home';
@@ -112,15 +114,8 @@ class Lokasi extends BaseController
       $peserta = $model->findAll($limit, $offset);
 
       foreach ($peserta as $row) {
-
-        $param = (object) [
-          'nik' => $row->nik,
-          'nomor_peserta' => $row->nomor_peserta,
-          'nomor_ijazah' => $row->nomor_ijazah,
-        ];
-
         $cache = \Config\Services::cache();
-        $cache->save('auth_'.$row->nik, $param, 360000);
+        $cache->save('auth_'.$row->nik, $row, 360000);
       }
 
       $page = $page + 1;
