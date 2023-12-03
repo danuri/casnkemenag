@@ -95,9 +95,9 @@ class Lokasi extends BaseController
       $model->update($id,$param);
 
 
-      $cek = $model->find($id);
-      $cache = \Config\Services::cache();
-      $cache->save('auth_'.$id, $row, 360000);
+      // $cek = $model->find($id);
+      // $cache = \Config\Services::cache();
+      // $cache->save('auth_'.$id, $row, 360000);
 
       return redirect()->back()->with('message', 'Data telah disimpan.');
     }
