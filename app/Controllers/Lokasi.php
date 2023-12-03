@@ -16,7 +16,7 @@ class Lokasi extends BaseController
       return view('lokasi', $data);
     }
 
-    public function authx()
+    public function auth()
     {
       if( !$this->validate([
         'nik' 	=> 'required',
@@ -28,9 +28,9 @@ class Lokasi extends BaseController
       }
 
       $cache = \Config\Services::cache();
-      $cek = $cache->get('auth_'.$this->request->getVar('nopes'));
+      // $cek = $cache->get('auth_'.$this->request->getVar('nopes'));
       $model = new LokasiModel;
-      // $cek = $model->where(['nik'=>$this->request->getVar('nik'),'nomor_peserta'=>$this->request->getVar('nopes'),'nomor_ijazah'=>$this->request->getVar('ijazah')])->first();
+      $cek = $model->where(['nik'=>$this->request->getVar('nik'),'nomor_peserta'=>$this->request->getVar('nopes'),'nomor_ijazah'=>$this->request->getVar('ijazah')])->first();
 
       if($cek){
         $data['title'] = 'Home';
