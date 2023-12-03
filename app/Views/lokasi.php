@@ -33,11 +33,11 @@
             <form class="" action="<?= site_url('lokasi')?>" method="post">
               <div class="mb-3">
                   <label for="nik" class="form-label">NIK</label>
-                  <input type="text" class="form-control" id="nik" name="nik">
+                  <input type="number" class="form-control" id="nik" name="nik">
               </div>
               <div class="mb-3">
                   <label for="nopes" class="form-label">Nomor Peserta</label>
-                  <input type="text" class="form-control" id="nopes" name="nopes">
+                  <input type="number" class="form-control" id="nopes" name="nopes">
               </div>
               <div class="mb-3">
                   <label for="nopes" class="form-label">Nomor Ijazah</label>
