@@ -38,6 +38,7 @@
               <div class="mb-3">
                   <label for="nopes" class="form-label">Nomor Peserta</label>
                   <input type="number" class="form-control" id="nopes" name="nopes">
+                  <p>Hanya angka</p>
               </div>
               <div class="mb-3">
                   <label for="nopes" class="form-label">Nomor Ijazah</label>
