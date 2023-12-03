@@ -20,6 +20,7 @@
         <li>Pilih lokasi ujian yang terdekat dengan domisili</li>
         <li>Lokasi Gedung dapat berubah pada setiap kabupaten (Kankemenag/Madrasah/PTKN/UPT/Balai). Menyesuaikan dengan kapasitas peserta.</li>
         <li>Jadwal dan Lokasi Gedung akan diinformasikan pada pengumuman selanjutnya</li>
+        <li>Untuk menghindari penyalahgunaan akun, silahkan Screenshot hasil pemilihan lokasi sebagai bukti.</li>
       </ul>
     </div>
     <div class="row">
@@ -37,6 +38,11 @@
               <div class="mb-3">
                   <label for="nopes" class="form-label">Nomor Peserta</label>
                   <input type="text" class="form-control" id="nopes" name="nopes">
+              </div>
+              <div class="mb-3">
+                  <label for="nopes" class="form-label">Nomor Ijazah</label>
+                  <input type="text" class="form-control" id="ijazah" name="ijazah">
+                  <p>Sesuai yang diinput pada SSCASN. Silahkan login ke SSCASN untuk memastikan.</p>
               </div>
               <div class="text-end">
                   <button type="submit" class="btn btn-primary" name="submit">Validasi</button>

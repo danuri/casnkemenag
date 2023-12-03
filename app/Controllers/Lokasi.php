@@ -21,13 +21,14 @@ class Lokasi extends BaseController
       if( !$this->validate([
         'nik' 	=> 'required',
         'nopes' 	=> 'required',
+        'ijazah' 	=> 'required',
       ]))
       {
         return redirect()->back()->with('message', 'Isi semua form.');
       }
 
       $model = new LokasiModel;
-      $cek = $model->where(['nik'=>$this->request->getVar('nik'),'nomor_peserta'=>$this->request->getVar('nopes')])->first();
+      $cek = $model->where(['nik'=>$this->request->getVar('nik'),'nomor_peserta'=>$this->request->getVar('nopes'),'nomor_ijazah'=>$this->request->getVar('ijazah')])->first();
 
       if($cek){
         $data['title'] = 'Home';
