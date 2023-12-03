@@ -28,9 +28,9 @@ class Lokasi extends BaseController
       }
 
       $cache = \Config\Services::cache();
-      // $cek = $cache->get('auth_'.$this->request->getVar('nik'));
+      $cek = $cache->get('auth_'.$this->request->getVar('nopes'));
       $model = new LokasiModel;
-      $cek = $model->where(['nik'=>$this->request->getVar('nik'),'nomor_peserta'=>$this->request->getVar('nopes'),'nomor_ijazah'=>$this->request->getVar('ijazah')])->first();
+      // $cek = $model->where(['nik'=>$this->request->getVar('nik'),'nomor_peserta'=>$this->request->getVar('nopes'),'nomor_ijazah'=>$this->request->getVar('ijazah')])->first();
 
       if($cek){
         $data['title'] = 'Home';
@@ -94,6 +94,11 @@ class Lokasi extends BaseController
       $id = decrypt($this->request->getVar('userid'));
       $model->update($id,$param);
 
+
+      $cek = $model->find($id);
+      $cache = \Config\Services::cache();
+      $cache->save('auth_'.$id, $row, 360000);
+
       return redirect()->back()->with('message', 'Data telah disimpan.');
     }
 
@@ -115,7 +120,7 @@ class Lokasi extends BaseController
 
       foreach ($peserta as $row) {
         $cache = \Config\Services::cache();
-        $cache->save('auth_'.$row->nik, $row, 360000);
+        $cache->save('auth_'.$row->nomor_peserta, $row, 360000);
       }
 
       $page = $page + 1;
