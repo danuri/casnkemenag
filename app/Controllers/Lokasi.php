@@ -103,4 +103,27 @@ class Lokasi extends BaseController
 
       print_r($provinsi);
     }
+
+    public function redisauth($limit,$page)
+    {
+			$offset = ($page == 0) ? 0 : ($page * $limit) - 1;
+
+      $model = new LokasiModel;
+      $peserta = $model->findAll($limit, $offset);
+
+      foreach ($peserta as $row) {
+
+        $param = (object) [
+          'nik' => $row->nik,
+          'nomor_peserta' => $row->nomor_peserta,
+          'nomor_ijazah' => $row->nomor_ijazah,
+        ];
+
+        $cache = \Config\Services::cache();
+        $cache->save('auth_'.$row->nik, $param, 360000);
+      }
+
+      $page = $page + 1;
+      return redirect()->to('lokasi/redisauth/'.$limit.'/'.$page);
+    }
 }

@@ -20,5 +20,5 @@ $routes->group("lokasi", function ($routes) {
     $routes->post('', 'Lokasi::auth');
     $routes->get('getkab/(:any)', 'Lokasi::getkab/$1');
     $routes->post('save', 'Lokasi::save');
-    $routes->get('test', 'Lokasi::test');
+    $routes->get('redisauth/(:num)/(:num)', 'Lokasi::redisauth/$1/$2');
 });
