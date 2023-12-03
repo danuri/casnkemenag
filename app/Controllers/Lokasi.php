@@ -16,7 +16,7 @@ class Lokasi extends BaseController
       return view('lokasi', $data);
     }
 
-    public function auth()
+    public function authx()
     {
       if( !$this->validate([
         'nik' 	=> 'required',
