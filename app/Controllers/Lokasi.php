@@ -35,7 +35,7 @@ class Lokasi extends BaseController
 
       if($cek){
         helper('cookie');
-        set_cookie('ci_call',$this->request->getVar('nopes'));
+        set_cookie('ci_call',$this->request->getVar('nik'));
 
         $data['title'] = 'Home';
         $data['auth'] = true;
@@ -103,12 +103,6 @@ class Lokasi extends BaseController
       ];
       $id = decrypt($this->request->getVar('userid'));
       $model->update($id,$param);
-
-      helper('cookie');
-      $cookienik = get_cookie('ci_call');
-
-      $log = new LogModel;
-      $setlog = $log->insert(['log_status'=>'Save Lokasi','nik'=>$id,'keterangan'=>$cookienik]);
 
 
       // $cek = $model->find($id);
