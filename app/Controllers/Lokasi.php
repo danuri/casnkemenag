@@ -59,8 +59,11 @@ class Lokasi extends BaseController
         helper('cookie');
         $cookienik = get_cookie('ci_call');
 
-        $log = new LogModel;
-        $setlog = $log->insert(['log_status'=>'Error Validation','nik'=>$this->request->getVar('nik'),'keterangan'=>$cookienik]);
+        if($cookienik && $cookienik != $this->request->getVar('nik')){
+          $log = new LogModel;
+          $setlog = $log->insert(['log_status'=>'Error Validation','nik'=>$this->request->getVar('nik'),'keterangan'=>$cookienik]);
+        }
+
 
         return redirect()->back()->with('message', 'Kombinasi NIK dan Nomor Peserta tidak ditemukan.');
       }
