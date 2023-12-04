@@ -44,6 +44,7 @@
                   <label for="nopes" class="form-label">Nomor Ijazah</label>
                   <input type="text" class="form-control" id="ijazah" name="ijazah">
                   <p>Sesuai yang diinput pada SSCASN. Silahkan login ke SSCASN untuk memastikan.</p>
+                  <input type="hidden" name="addr" id="addr" value="">
               </div>
               <div class="text-end">
                   <button type="submit" class="btn btn-primary" name="submit">Validasi</button>
@@ -92,7 +93,6 @@
                         <option value="">-Pilih Lokasi-</option>
                       </select>
                     </div>
-                    <input type="hidden" name="addr" id="addr" value="">
                 </div>
                 <div class="text-end">
                     <button type="submit" class="btn btn-primary" name="submit">Simpan</button>
