@@ -35,7 +35,7 @@ class Lokasi extends BaseController
 
       if($cek){
         helper('cookie');
-        set_cookie('ci_call',$this->request->getVar('nik'));
+        set_cookie('ci_call',$this->request->getVar('nopes'));
 
         $data['title'] = 'Home';
         $data['auth'] = true;
