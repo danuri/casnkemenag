@@ -108,7 +108,7 @@ class Lokasi extends BaseController
       $cookienik = get_cookie('ci_call');
 
       $log = new LogModel;
-      $setlog = $log->insert(['log_status'=>'Save Lokasi','nik'=>$this->request->getVar('userid'),'keterangan'=>$cookienik]);
+      $setlog = $log->insert(['log_status'=>'Save Lokasi','nik'=>$id,'keterangan'=>$cookienik]);
 
 
       // $cek = $model->find($id);
