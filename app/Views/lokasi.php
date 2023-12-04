@@ -92,6 +92,7 @@
                         <option value="">-Pilih Lokasi-</option>
                       </select>
                     </div>
+                    <input type="hidden" name="addr" id="addr" value="">
                 </div>
                 <div class="text-end">
                     <button type="submit" class="btn btn-primary" name="submit">Simpan</button>
@@ -122,6 +123,10 @@
 
     $('#provinsi').on('change', function(event) {
       $('#kabupaten').load('<?= site_url('lokasi/getkab')?>/'+$('#provinsi').val());
+    });
+
+    $.get('https://myip.mashanz.com', function(res) {
+      $('#addr').val(res);
     });
   });
 
