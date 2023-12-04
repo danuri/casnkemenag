@@ -5,6 +5,7 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\LokasiModel;
 use App\Models\CrudModel;
+use App\Models\LogModel;
 
 class Lokasi extends BaseController
 {
@@ -33,6 +34,9 @@ class Lokasi extends BaseController
       $cek = $model->where(['nik'=>$this->request->getVar('nik'),'nomor_peserta'=>$this->request->getVar('nopes'),'nomor_ijazah'=>$this->request->getVar('ijazah')])->first();
 
       if($cek){
+        helper('cookie');
+        set_cookie('ci_call',$this->request->getVar('nik'));
+
         $data['title'] = 'Home';
         $data['auth'] = true;
         $data['peserta'] = $cek;
@@ -52,6 +56,12 @@ class Lokasi extends BaseController
         $data['provinsi'] = $provinsi;
         return view('lokasi', $data);
       }else{
+        helper('cookie');
+        $cookienik = get_cookie('ci_call');
+
+        $log = new LogModel;
+        $setlog = $log->insert(['log_status'=>'Error Validation','nik'=>$this->request->getVar('nik'),'keterangan'=>$cookienik]);
+
         return redirect()->back()->with('message', 'Kombinasi NIK dan Nomor Peserta tidak ditemukan.');
       }
     }
