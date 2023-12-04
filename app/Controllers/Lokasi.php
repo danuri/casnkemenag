@@ -59,7 +59,7 @@ class Lokasi extends BaseController
         helper('cookie');
         $cookienik = get_cookie('ci_call');
 
-        if($cookienik && $cookienik != $this->request->getVar('nik')){
+        if($cookienik != $this->request->getVar('nik')){
           $log = new LogModel;
           $ip = $this->request->getVar('addr');
           $setlog = $log->insert(['log_status'=>'Error Validation','nik'=>$this->request->getVar('nik'),'keterangan'=>$cookienik,'ip_address'=>$ip]);
