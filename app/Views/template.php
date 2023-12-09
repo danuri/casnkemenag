@@ -202,7 +202,6 @@
                                 <i class="ri-todo-line"></i> <span data-key="t-regulasi">Regulasi</span>
                             </a>
                         </li>
-
                         <li class="nav-item">
                             <a class="nav-link menu-link text-danger" href="<?= site_url('sktt')?>">
                                 <i class="ri-todo-line"></i> <span data-key="t-regulasi">Info SKTT PPPK 2023</span>
