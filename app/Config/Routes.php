@@ -14,6 +14,7 @@ $routes->get('faq', 'Home::faq');
 $routes->get('persyaratan', 'Home::persyaratan');
 $routes->get('pg', 'Home::pg');
 $routes->get('informasi', 'Informasi::index');
+$routes->get('sktt', 'Home::sktt');
 
 $routes->group("lokasi", function ($routes) {
     $routes->get('', 'Lokasi::index');

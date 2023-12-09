@@ -204,8 +204,8 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link menu-link text-danger" href="<?= site_url('lokasi')?>">
-                                <i class="ri-todo-line"></i> <span data-key="t-regulasi">Pemilihan Lokasi SKTT</span>
+                            <a class="nav-link menu-link text-danger" href="<?= site_url('sktt')?>">
+                                <i class="ri-todo-line"></i> <span data-key="t-regulasi">Info SKTT PPPK 2023</span>
                             </a>
                         </li>
                     </ul>

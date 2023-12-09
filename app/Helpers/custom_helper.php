@@ -187,6 +187,23 @@ function format_number($dates='')
 // 	return $rupiah;
 // }
 
+function harisesi($sesi)
+{
+  if($sesi == 1){
+    return 'Rabu';
+  }else if($sesi == 2){
+    return 'Rabu';
+  }else if($sesi == 3){
+    return 'Rabu';
+  }else if($sesi == 4){
+    return 'Kamis';
+  }else if($sesi == 5){
+    return 'Kamis';
+  }else if($sesi == 6){
+    return 'Kamis';
+  }
+}
+
 function rupiah($angka){
 
 	$hasil_rupiah = number_format($angka,0,',','.');

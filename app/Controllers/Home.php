@@ -37,6 +37,14 @@ class Home extends BaseController
       return view('formasi/teknis', $data);
     }
 
+    public function sktt(): string
+    {
+      // $this->cachePage(86400);
+      $data['title'] = 'Tata Cara Penggunaan SEB';
+
+      return view('sktt', $data);
+    }
+
     public function cpppknakes(): string
     {
       $this->cachePage(86400);
