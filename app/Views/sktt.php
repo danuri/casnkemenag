@@ -137,7 +137,7 @@
             </div>
             <div class="card">
               <div class="card-header">
-                <h3>Tata Cara Konfigurasi</h3>
+                <h3>Tata Cara Konfigurasi SEB</h3>
               </div>
               <div class="card-body">
                 <h5>1. Instalasi</h5>
