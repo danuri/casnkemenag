@@ -163,7 +163,7 @@
                   <li>Proses Instalasi berhasil jika muncul Halaman Login CAT SKTT</li>
                 </ol>
 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/pUkq7qaSMB8?si=sdHxioyJ-LvaOLL2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/pUkq7qaSMB8?si=sdHxioyJ-LvaOLL2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
               </div>
             </div>
           </div>

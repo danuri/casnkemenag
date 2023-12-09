@@ -39,7 +39,7 @@ class Home extends BaseController
 
     public function sktt(): string
     {
-      // $this->cachePage(86400);
+      $this->cachePage(86400);
       $data['title'] = 'Tata Cara Penggunaan SEB';
 
       return view('sktt', $data);
