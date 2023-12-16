@@ -1,38 +1,6 @@
 <?= $this->extend('template') ?>
 
 <?= $this->section('content') ?>
-<style media="screen">
-.countdown {
-      display: flex;
-    }
-
-    .countdown .day,
-    .countdown .hour,
-    .countdown .min,
-    .countdown .sec {
-      color: #2799ff;
-      padding: 1vw 3vw;
-      text-align: center;
-    }
-
-    .countdown .day .num,
-    .countdown .hour .num,
-    .countdown .min .num,
-    .countdown .sec .num {
-      display: block;
-      font-size: 55px;
-      line-height: 1em;
-    }
-
-    .countdown .day .word,
-    .countdown .hour .word,
-    .countdown .min .word,
-    .countdown .sec .word {
-      display: block;
-      font-size: 15px;
-      color: #8a99ab;
-    }
-</style>
 <div class="page-content">
   <div class="container-fluid">
 
@@ -46,19 +14,9 @@
 
     <div class="row">
       <div class="col-xxl-7">
-        <div class="card">
-                                <div class="card-body p-0">
-                                    <div class="row align-items-end">
-                                          <div class="countdown" data-date="10-10-2023" data-time="00:00">
-  <div class="day"><span class="num"></span><span class="word"></span></div>
-  <div class="hour"><span class="num"></span><span class="word"></span></div>
-  <div class="min"><span class="num"></span><span class="word"></span></div>
-  <div class="sec"><span class="num"></span><span class="word"></span></div>
-</div>
-                                    </div>
-                                </div> <!-- end card-body-->
-                            </div>
-
+        <div class="card card-body">
+          <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="casnkemenag/103" data-width="100%"></script>
+        </div>
         <div class="card">
           <div class="card-header align-items-center d-flex">
             <h4 class="card-title mb-0 flex-grow-1">Jadwal Pendaftaran CASN</h4>
@@ -94,6 +52,7 @@
         <div class="d-flex flex-column h-100">
           <div class="row h-100">
             <div class="col-12">
+
               <div class="card">
                 <div class="card-body p-0">
                   <div class="alert alert-warning border-0 rounded-0 m-0 d-flex align-items-center" role="alert">
