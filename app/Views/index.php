@@ -14,9 +14,8 @@
 
     <div class="row">
       <div class="col-xxl-7">
-        <div class="card card-body">
-          <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="casnkemenag/103" data-width="100%"></script>
-        </div>
+        <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="casnkemenag/103" data-width="100%"></script>
+
         <div class="card">
           <div class="card-header align-items-center d-flex">
             <h4 class="card-title mb-0 flex-grow-1">Jadwal Pendaftaran CASN</h4>
