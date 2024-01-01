@@ -31,6 +31,36 @@
         <div class="mt-3">
           <div class="d-flex align-items-center mb-2">
             <div class="flex-shrink-0 me-1">
+              <i class="ri-user-settings-line fs-24 align-middle text-success me-1"></i>
+            </div>
+            <div class="flex-grow-1">
+              <h5 class="fs-17 mb-0 fw-semibold">Pengisian DRH</h5>
+            </div>
+          </div>
+
+          <div class="accordion accordion-border-box" id="syarat-accordion">
+            <?php foreach ($drh as $row) {?>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="syarat-heading<?= $row->id?>">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#syarat-collapse<?= $row->id?>" aria-expanded="false" aria-controls="syarat-collapse<?= $row->id?>" fdprocessedid="attyp">
+                    <?= $row->question?>
+                  </button>
+                </h2>
+                <div id="syarat-collapse<?= $row->id?>" class="accordion-collapse collapse" aria-labelledby="syarat-heading<?= $row->id?>" data-bs-parent="#syarat-accordion" style="">
+                  <div class="accordion-body">
+                    <?= $row->answer?>
+                  </div>
+                </div>
+              </div>
+            <?php } ?>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="mt-3">
+          <div class="d-flex align-items-center mb-2">
+            <div class="flex-shrink-0 me-1">
               <i class="ri-question-line fs-24 align-middle text-success me-1"></i>
             </div>
             <div class="flex-grow-1">

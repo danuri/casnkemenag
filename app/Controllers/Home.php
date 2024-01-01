@@ -63,6 +63,7 @@ class Home extends BaseController
       $data['general'] = $model->getResult('faq',['category'=>1]);
       $data['syarat'] = $model->getResult('faq',['category'=>2]);
       $data['pendidikan'] = $model->getResult('faq',['category'=>3]);
+      $data['drh'] = $model->getResult('faq',['category'=>4]);
       $data['title'] = 'FAQ';
       return view('faq', $data);
     }
