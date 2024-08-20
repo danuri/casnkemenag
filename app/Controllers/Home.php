@@ -9,6 +9,7 @@ class Home extends BaseController
     {
         // $data['title'] = 'Home';
         // return view('index', $data);
+        $this->cachePage(86400);
         throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound('Informasi belum tersedia');
     }
 
