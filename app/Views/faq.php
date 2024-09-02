@@ -27,7 +27,8 @@
       </div>
     </div>
     <div class="row justify-content-evenly mb-4">
-      <div class="col-lg-6">
+      <h2>Coming Soon</h2>
+      <!-- <div class="col-lg-6">
         <div class="mt-3">
           <div class="d-flex align-items-center mb-2">
             <div class="flex-shrink-0 me-1">
@@ -146,7 +147,7 @@
             <?php } ?>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
 
   </div>

@@ -14,11 +14,11 @@
 
     <div class="row">
       <div class="col-xxl-7">
-        <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="casnkemenag/103" data-width="100%"></script>
+        <!-- <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="casnkemenag/103" data-width="100%"></script> -->
 
         <div class="card">
           <div class="card-header align-items-center d-flex">
-            <h4 class="card-title mb-0 flex-grow-1">Jadwal Pendaftaran CASN</h4>
+            <h4 class="card-title mb-0 flex-grow-1">Jadwal Pendaftaran CASN 2024</h4>
           </div>
           <div class="card-body">
             <div class="table-responsive table-card">
@@ -33,13 +33,13 @@
                 <tbody>
                   <tr>
                     <td>CPNS</td>
-                    <td>22 September 2023, 23:59 WIB</td>
-                    <td>09 Oktober 2023, 23:59 WIB</td>
+                    <td>01 September 2024</td>
+                    <td>16 September 2024</td>
                   </tr>
                   <tr>
                     <td>CPPPK</td>
-                    <td>23 September 2023, 23:59 WIB</td>
-                    <td>09 Oktober 2023, 23:59 WIB</td>
+                    <td>Belum Tersedia</td>
+                    <td>Belum Tersedia</td>
                   </tr>
                 </tbody>
               </table>

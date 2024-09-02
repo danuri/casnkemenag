@@ -7,10 +7,10 @@ class Home extends BaseController
 {
     public function index(): string
     {
-        // $data['title'] = 'Home';
-        // return view('index', $data);
+        $data['title'] = 'Home';
+        return view('index', $data);
         // $this->cachePage(86400);
-        throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound('Informasi belum tersedia');
+        // throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound('Informasi belum tersedia');
     }
 
     public function pengumuman(): string

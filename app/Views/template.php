@@ -165,7 +165,7 @@
                             </a>
                         </li>
 
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link menu-link" href="#sidebarLanding" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLanding">
                                 <i class="ri-todo-line"></i> <span data-key="t-formasi">Formasi</span>
                             </a>
@@ -182,13 +182,13 @@
                                     </li>
                                 </ul>
                             </div>
-                        </li>
+                        </li> -->
 
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link menu-link" href="<?= site_url('pg')?>">
                                 <i class="ri-todo-line"></i> <span data-key="t-faq">Passing Grade</span>
                             </a>
-                        </li>
+                        </li> -->
 
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="<?= site_url('faq')?>">
@@ -196,7 +196,7 @@
                             </a>
                         </li>
 
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link menu-link" href="https://sscasn.bkn.go.id/dasarhukum" target="_blank">
                                 <i class="ri-todo-line"></i> <span data-key="t-regulasi">Regulasi</span>
                             </a>
@@ -206,7 +206,7 @@
                                 <i class="ri-todo-line"></i> <span data-key="t-regulasi">Info SKTT PPPK 2023</span>
                             </a>
                         </li>
-                    </ul>
+                    </ul> -->
                 </div>
                 <!-- Sidebar -->
             </div>
