@@ -190,11 +190,11 @@
                             </a>
                         </li> -->
 
-                        <!-- <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link menu-link" href="<?= site_url('faq')?>">
                                 <i class="ri-todo-line"></i> <span data-key="t-faq">FAQ</span>
                             </a>
-                        </li> -->
+                        </li>
 
                         <!-- <li class="nav-item">
                             <a class="nav-link menu-link" href="https://sscasn.bkn.go.id/dasarhukum" target="_blank">
