@@ -62,7 +62,7 @@ class Home extends BaseController
       $this->cachePage(86400);
 
       $model = new CrudModel;
-      $data['general'] = $model->getResult('faq',['category'=>1]);
+      $data['general'] = $model->getResult('faq',['category'=>1,'status'=>1]);
       // $data['syarat'] = $model->getResult('faq',['category'=>2]);
       // $data['pendidikan'] = $model->getResult('faq',['category'=>3]);
       // $data['drh'] = $model->getResult('faq',['category'=>4]);
