@@ -34,7 +34,7 @@
                   <tr>
                     <td>CPNS</td>
                     <td>01 September 2024</td>
-                    <td>16 September 2024</td>
+                    <td>14 September 2024</td>
                   </tr>
                   <tr>
                     <td>CPPPK</td>
