@@ -124,6 +124,7 @@ class Home extends BaseController
       $response = curl_exec($curl);
 
       curl_close($curl);
-      echo $response;
+      $data['response'] = $response;
+      return view('progres', $data);
     }
 }
