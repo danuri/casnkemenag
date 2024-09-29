@@ -37,6 +37,11 @@
                         <td>Informasi Daftar Pelamar Perubahan Status Kelulusan Seleksi Administrasi CPNS Tahun Anggaran 2024</td>
                         <td><a href="https://ropeg.kemenag.go.id:9000/cdn/Informasi-Daftar-Pelamar-Perubahan-Status-Kelulusan-Seleksi-Administrasi-CPNS-Tahun-Anggaran-2024.pdf" target="_blank">Download</a></td>
                       </tr>
+<tr>
+                        <td>29-09-2024</td>
+                        <td>Pengumuman CPNS Pasca Sanggah Kemenag Tahun 2024</td>
+                        <td><a href="https://kemenag.go.id/informasi/pengumuman-cpns-pasca-sanggah-kemenag-tahun-2024-" target="_blank">Download</a></td>
+                      </tr>
                     </tbody>
                   </table>
                 </div>
