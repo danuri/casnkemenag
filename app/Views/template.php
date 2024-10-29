@@ -4,7 +4,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title><?= $title ?> - CASN Kementerian Agama RI 2023</title>
+    <title><?= $title ?> - CASN Kementerian Agama RI 2024</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Seleksi CASN Kementerian Agama RI Tahun Anggaran 2023" name="description" />
     <meta content="Danunih" name="author" />
