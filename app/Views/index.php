@@ -102,7 +102,7 @@
                   </li>
                   <li><strong>Biodata:</strong> Isi dengan semua form yang tertera.</li>
                   <li><strong>Jenis Seleksi:</strong> Pilih Jenis Ketenagaan. Untuk Guru, Dosen dan Jabatan Fungsional lainnya selain kesehatan memilih <stong>Tenaga Teknis</strong>. Untuk jabatan bidang kesehatan, memilih <strong>Tenaga Kesehatan</strong>.</li>
-                  <li><strong>Formasi:</strong> Pilih Instansi <strong>Kementerian Agama</strong>. Jenis <strong>Formasi Khusus</strong>. Dan isi data pendidikan.</li>
+                  <li><strong>Formasi:</strong> Pilih Instansi <strong>Kementerian Agama</strong>. Jenis <strong>Formasi Khusus</strong>. <strong>Pilih Jabatan sesuai dengan yang tertera pada PDM</strong>. Dan isi data pendidikan.</li>
                   <li><strong>Riwayat:</strong> Lengkapi Riwayat sesuai form yang disediakan</li>
                   <li><strong>Dokumen:</strong> Lengkapi Dokumen Persyaratan. Lampiran template dapat diunduh melalui pengumuman PPPK.</li>
                   <li><strong>Resume:</strong> Baca kembali dengan seksama isian pendaftaran Anda. Anda tidak dapat mengubah kembali data jika telah melewati langkah resume.</li>
