@@ -57,10 +57,13 @@
                     <p>Perhatikan Informasi yang tertera pada Aplikasi PDM Non-ASN.</p>
                   </li>
                   <li>
-                    <p>Klik <strong>Generate</strong>.</p>
+                    <p>Klik <strong>Generate</strong> dan klik setuju.</p>
                   </li>
                   <li>
-                    <p>Unduh/<i>Download</i> Bukti cek formasi yang sudah disediakan.</p>
+                    <p>Klik <strong>Proses Generate</strong>.</p>
+                  </li>
+                  <li>
+                    <p>Klik <strong>Cetak</strong> untuk mengunduk Bukti cek formasi.</p>
                   </li>
                   <li>
                     <p>Dokumen yang diunduh menjadi persyaratan Anda ketika melamar PPPK pada SSCASN.</p>
@@ -95,15 +98,17 @@
                 <p class="text-muted">Melamar Formasi:</p>
                 <ul class="text-muted vstack gap-2">
                   <li>
-                    Silahkan baca melalui <a href="https://sscasn.bkn.go.id/bukupetunjuk" target="_blank">https://sscasn.bkn.go.id/bukupetunjuk</a>
+                    Login ke <a href="https://sscasn.bkn.go.id/" target="_blank">https://sscasn.bkn.go.id/</a> menggunakan akun pendaftaran sebelumnya
                   </li>
+                  <li><strong>Biodata:</strong> Isi dengan semua form yang tertera.</li>
+                  <li><strong>Jenis Seleksi:</strong> Pilih Jenis Ketenagaan. Untuk Guru, Dosen dan Jabatan Fungsional lainnya selain kesehatan memilih <stong>Tenaga Teknis</strong>. Untuk jabatan bidang kesehatan, memilih <strong>Tenaga Kesehatan</strong>.</li>
+                  <li><strong>Formasi:</strong> Pilih Instansi <strong>Kementerian Agama</strong>. Jenis <strong>Formasi Khusus</strong>. Dan isi data pendidikan.</li>
+                  <li><strong>Riwayat:</strong> Lengkapi Riwayat sesuai form yang disediakan</li>
+                  <li><strong>Dokumen:</strong> Lengkapi Dokumen Persyaratan. Lampiran template dapat diunduh melalui pengumuman PPPK.</li>
+                  <li><strong>Resume:</strong> Baca kembali dengan seksama isian pendaftaran Anda. Anda tidak dapat mengubah kembali data jika telah melewati langkah resume.</li>
+                  <li><strong>Submit:</strong> Klik Submit jika sudah sesuai. Anda dapat mengunduh Kartu Pendaftaran sebagai bukti Anda sudah mendaftar.</li>
                 </ul>
               </div>
-            </div>
-
-
-            <div class="text-end">
-              <a href="#!" class="btn btn-danger">I'm Understand</a>
             </div>
           </div>
         </div>
