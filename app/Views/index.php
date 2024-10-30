@@ -66,6 +66,7 @@
                     <p>Dokumen yang diunduh menjadi persyaratan Anda ketika melamar PPPK pada SSCASN.</p>
                   </li>
                 </ul>
+                <h4>Lihat Panduan di <a href="https://youtu.be/_Vt0JUK4XrM" target="_blank">Youtube</a></h4>
               </div>
             </div>
 
