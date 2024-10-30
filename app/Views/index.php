@@ -57,10 +57,7 @@
                     <p>Perhatikan Informasi yang tertera pada Aplikasi PDM Non-ASN.</p>
                   </li>
                   <li>
-                    <p>Klik <strong>Generate</strong> dan klik setuju.</p>
-                  </li>
-                  <li>
-                    <p>Klik <strong>Proses Generate</strong>.</p>
+                    <p>Klik <strong>Generate</strong> dan klik setuju. Tunggu <i>Proses Generate</i> hingga selesai.</p>
                   </li>
                   <li>
                     <p>Klik <strong>Cetak</strong> untuk mengunduk Bukti cek formasi.</p>
